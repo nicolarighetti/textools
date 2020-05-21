@@ -14,5 +14,5 @@ Currently features of textools are:
 * a "cleaner" to clean textual data
 * a "concatenator" to merge textual data by group
 * a "lemmatizer" to perform text lemmatization in many languages
-* a "clusterizer" to perform text clustering (kmeans and hierarchical clusterning based on cosine metrics) and a function "clusterms" to extract cluster-related terms 
+* a "clusterizer" to perform text clustering (kmeans and hierarchical clusterning based on cosine metric) and a function "clusterms" to extract cluster-related terms 
 * a "lca" function to perform lexical correspondence analysis
