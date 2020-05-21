@@ -10,19 +10,9 @@ The package is a work in progress.
 
 ## Features
 
-Currently textools includes:
+Currently features of textools are:
 * a "cleaner" to clean textual data
 * a "concatenator" to merge textual data by group
 * a "lemmatizer" to perform text lemmatization in many languages
 * a "clusterizer" to perform text clustering (kmeans and hierarchical clusterning based on cosine metrics) and a function "clusterms" to extract cluster-related terms 
 * a "lca" function to perform lexical correspondence analysis
-
-## Installation
-You can install textools from GitHub.
-
-``` r
-# install.packages("devtools")
-
-library("devtools")
-devtools::install_github("nicolarighetti/textools")
-```
