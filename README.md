@@ -10,7 +10,7 @@ The package is a work in progress.
 
 ## Features
 
-Currently features of textools are:
+Currently, textools includes:
 * a "cleaner" to clean textual data
 * a "concatenator" to merge textual data by group
 * a "lemmatizer" to perform text lemmatization in many languages
