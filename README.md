@@ -1,4 +1,4 @@
-# textools
+# Textools
 
 Textools is a collection of tools to perform common text analysis operations in R. It is essentialy a convenience wrapper for consolidate functions included in great and well-known packages like [quanteda](https://quanteda.io/), [FactoMineR](http://factominer.free.fr/), [factoextra](https://github.com/kassambara/factoextra), and [koRpus](https://cran.r-project.org/web/packages/koRpus/vignettes/koRpus_vignette.html), among others. 
 
