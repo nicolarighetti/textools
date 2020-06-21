@@ -42,7 +42,7 @@
 #'
 #' @export
 
-lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", clean_text = TRUE, parallel = TRUE) {
+lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", cleaner = TRUE, parallel = TRUE) {
 
   if (lang == "it") {
     base::requireNamespace("koRpus.lang.it")
@@ -70,12 +70,12 @@ lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", c
       lang_preset <- "koRpus.lang.ru"
     }
 
-  if (clean_text == TRUE){
+  if (cleaner == TRUE){
     rawtext <-
       cleaner(rawtext) # pre-clean the texts to reduce the resource for lemmatizing
   }
   
-  rawtext <- rawtext[!is.na(rawtext)] # remove empty documents
+  rawtext <- subset(rawtext, nchar(rawtext)>0) # remove empty documents
 
     if (parallel == TRUE) {
       # setup parallel backend
