@@ -12,7 +12,7 @@
 #' @param tsj minimum frequency value for feature selection (default 3).
 
 #' @return a list containing the result of clustering and the original document term matrix, for subsequent analysis
-#' through \link[rainette]{rainette_explor} or \link[rainette]{rainette_plot}
+#' through, for instance \link[rainette]{rainette_plot} or \link[rainette]{rainette_explor}
 #'
 #' @details the function is simply a wrapper of functions available in the package \href{https://juba.github.io/rainette/}{rainette}.
 #' Please refer to the available documentations of \link[rainette]{rainette}
@@ -20,7 +20,7 @@
 #' @examples
 #' \dontrun{
 #' reinert_clustering <- reinert(df, docid_field = "URL", text_field = "Message", k = 10)
-#' rainette::rainette_explor(reinert_clustering[[1]], reinert_clustering[[2]])}
+#' rainette::rainette_plot(reinert_clustering[[1]], reinert_clustering[[2]])}
 #'
 #' @importFrom quanteda dfm corpus dfm_trim dfm_tfidf rowSums
 #' @importFrom rainette rainette
