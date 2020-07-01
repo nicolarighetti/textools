@@ -70,8 +70,6 @@ lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", p
       lang_preset <- "koRpus.lang.ru"
     }
   
-  rawtext <- subset(rawtext, nchar(rawtext)>0) # remove empty documents
-
     if (parallel == TRUE) {
       # setup parallel backend
       cores <- parallel::detectCores() - 1
