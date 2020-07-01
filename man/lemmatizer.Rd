@@ -8,7 +8,6 @@ lemmatizer(
   rawtext,
   lang = "it",
   TreeTaggerPath = "C:/TreeTagger",
-  cleaner = TRUE,
   parallel = TRUE
 )
 }

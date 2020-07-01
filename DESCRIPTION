@@ -9,7 +9,7 @@ URL: https://github.com/nicolarighetti/textools
 Description: A set of tools to perform text mining tasks. Mostly a convenience wrapper for well-established functions to perform common text mining tasks saving time and code.
 License: MIT + file LICENSE
 Depends: R (>= 3.6)
-Imports: FactoMineR (>= 1.8), foreach (>= 1.5), parallel (>= 3.6), doSNOW (>= 1.0), factoextra (>= 1.0), dplyr (>= 0.8), koRpus (>= 0.1), quanteda (>= 2.0), tm (>= 0.7)
+Imports: FactoMineR (>= 1.8), foreach (>= 1.5), parallel (>= 3.6), doSNOW (>= 1.0), factoextra (>= 1.0), dplyr (>= 0.8), koRpus (>= 0.1), quanteda (>= 2.0), tm (>= 0.7), rainette (>= 0.1)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
