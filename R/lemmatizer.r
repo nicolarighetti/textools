@@ -42,7 +42,7 @@
 #'
 #' @export
 
-lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", parallel = TRUE) {
+lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "/Applications/treetagger", parallel = TRUE) {
 
   if (lang == "it") {
     base::requireNamespace("koRpus.lang.it")
@@ -97,7 +97,7 @@ lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "C:/TreeTagger", p
                                  lang = lang,
                                  TT.options = list(path = TreeTaggerPath, preset = lang))
 
-                    TT.table <- data.frame(tab@TT.res)
+                    TT.table <- data.frame(tab@tokens)                                                               
 
                     lemma.df <- subset(TT.table,
                                        wclass == "noun" | wclass == "name" | wclass == "adjective" | wclass == "verb" | tag == "adverb")
