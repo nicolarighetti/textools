@@ -15,7 +15,7 @@
 #'  \item{"ru"}: {Russian}
 #' }
 #'
-#' @param TreeTaggerPath the file path of the local installation of Tree Tagger (default "C:/TreeTagger")
+#' @param TreeTaggerPath the file path of the local installation of Tree Tagger (default "/Applications/treetagger")
 #' @param parallel enables parallel processing to speed up the lemmatization process taking advantage of multiple cores (default TRUE).
 #' The number of cores is automatically set to all the available cores minus one
 #'
