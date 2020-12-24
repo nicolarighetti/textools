@@ -122,11 +122,11 @@ lemmatizer <- function(rawtext, lang = "it", TreeTaggerPath = "/Applications/tre
           format = "obj",
           treetagger = "manual",
           lang = lang,
-          TT.options = list(path = "C:/TreeTagger", preset = lang)
+          TT.options = list(path = "/Applications/treetagger", preset = lang)
         )
 
       TT.table <-
-        data.frame(tab@TT.res)
+        data.frame(tab@tokens)                                                               
       lemma.df <-
         subset(
           TT.table,
